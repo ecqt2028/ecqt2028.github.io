@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ECQT 2028 | European Conference on Queueing Theory</title>
+
+<style>
+
+:root{
+    --primary:#003B5C;
+    --secondary:#008EAA;
+    --accent:#F28C28;
+    --background:#F7F9FB;
+    --white:#ffffff;
+    --text:#25313c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.hero{
+    min-height:650px;
+    padding:100px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+
+    background-image:
+        linear-gradient(
+            rgba(0,59,92,0.45),
+            rgba(0,59,92,0.55)
+        ),
+        url("Guggenheimbilbaoriver.jpg");
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+
+    text-shadow:0 2px 8px rgba(0,0,0,0.55);
+}
+
+.hero h1{
+    font-size:clamp(3rem, 8vw, 5.5rem);
+    line-height:1.1;
+    margin-bottom:15px;
+    letter-spacing:2px;
+}
+
+.hero h2{
+    max-width:900px;
+    font-size:clamp(1.3rem, 3vw, 2rem);
+    font-weight:300;
+    line-height:1.4;
+    margin-bottom:30px;
+}
+
+.hero .location{
+    font-size:1.4rem;
+    font-weight:600;
+    margin-bottom:8px;
+}
+
+.hero .date{
+    font-size:1.2rem;
+}
+
+.announcement{
+    margin-top:30px;
+    display:inline-block;
+    background:rgba(0,0,0,0.28);
+    border:1px solid rgba(255,255,255,0.45);
+    padding:12px 24px;
+    border-radius:30px;
+    backdrop-filter:blur(4px);
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:-60px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.section{
+    margin-top:60px;
+}
+
+.section h2{
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.section h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:var(--accent);
+    margin-top:10px;
+}
+
+.text-block{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.committee{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.committee-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.committee-card h3{
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.committee-card .name{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.editions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.edition{
+    background:white;
+    padding:15px 20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+    
+footer{
+    margin-top:80px;
+    padding:35px;
+    background:var(--primary);
+    color:white;
+    text-align:center;
+}
+
+@media (max-width:700px){
+
+    .hero{
+        min-height:560px;
+        padding:70px 20px;
+        background-position:center center;
+    }
+
+    .hero h1{
+        letter-spacing:1px;
+    }
+
+    .hero h2{
+        margin-bottom:22px;
+    }
+
+    .hero .location{
+        font-size:1.2rem;
+    }
+
+    .hero .date{
+        font-size:1.05rem;
+    }
+
+    .announcement{
+        max-width:90%;
+        padding:10px 18px;
+    }
+
+    .container{
+        padding:45px 18px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <h1>ECQT 2028</h1>
+
+    <h2>European Conference on Queueing Theory</h2>
+
+    <div class="location">Bilbao, Spain</div>
+
+    <div class="date">
+        Week beginning <strong>10 July 2028</strong>
+    </div>
+
+    <div class="announcement">
+        Exact conference dates will be announced soon
+    </div>
+
+</section>
+
+<div class="container">
+    <section class="section">
+
+        <h2>Venue</h2><br>
+        <p>
+         The workshop will be held in Bizkaia Aretoa, which is in the center of Bilbao. 
+          Bizkaia Aretoa is the University of the Basque Country's most emblematic building for organizing social, 
+          cultural, academic, and scientific events, whether organized by the university itself or external entities.
+          <br>
+          The exact address is: Avda. Abandoibarra, 3, Bilbao.
+          <br>
+          More information about Bizkaia Aretoa: <a href="https://www.ehu.eus/en/web/bizkaia-aretoa/">here</a>
+        </p>
+    </section>
+</div>
+
+<footer>
+    ECQT 2028 · Bilbao, Spain · July 2028
+</footer>
+
+</body>
+</html>
