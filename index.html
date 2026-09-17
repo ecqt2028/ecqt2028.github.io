@@ -31,28 +31,48 @@ body{
 }
 
 .hero{
-    background:linear-gradient(
-        rgba(0,59,92,0.90),
-        rgba(0,59,92,0.85)
-    );
+    min-height:650px;
+    padding:100px 20px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
     color:white;
     text-align:center;
-    padding:100px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(0,59,92,0.45),
+            rgba(0,59,92,0.55)
+        ),
+        url("Guggenheimbilbaoriver.jpg");
+
+    background-size:cover;
+    background-position:center center;
+    background-repeat:no-repeat;
+
+    text-shadow:0 2px 8px rgba(0,0,0,0.55);
 }
 
 .hero h1{
-    font-size:4rem;
-    margin-bottom:10px;
+    font-size:clamp(3rem, 8vw, 5.5rem);
+    line-height:1.1;
+    margin-bottom:15px;
+    letter-spacing:2px;
 }
 
 .hero h2{
+    max-width:900px;
+    font-size:clamp(1.3rem, 3vw, 2rem);
     font-weight:300;
+    line-height:1.4;
     margin-bottom:30px;
 }
 
 .hero .location{
-    font-size:1.3rem;
-    margin-bottom:10px;
+    font-size:1.4rem;
+    font-weight:600;
+    margin-bottom:8px;
 }
 
 .hero .date{
@@ -62,9 +82,11 @@ body{
 .announcement{
     margin-top:30px;
     display:inline-block;
-    background:rgba(255,255,255,0.15);
-    padding:12px 22px;
+    background:rgba(0,0,0,0.28);
+    border:1px solid rgba(255,255,255,0.45);
+    padding:12px 24px;
     border-radius:30px;
+    backdrop-filter:blur(4px);
 }
 
 .container{
@@ -188,12 +210,7 @@ footer{
 
 </section>
 
-<section class="hero">
-  <div class="hero-content">
-    <h1>ECQT 2028</h1>
-        <p>Bilbao, Spain</p>
-   </div>
-</section>
+
     
 <div class="container">
 <!--
