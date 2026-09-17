@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ECQT 2028 | European Conference on Queueing Theory</title>
+
+<style>
+
+:root{
+    --primary:#003B5C;
+    --secondary:#008EAA;
+    --accent:#F28C28;
+    --background:#F7F9FB;
+    --white:#ffffff;
+    --text:#25313c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background:var(--background);
+    color:var(--text);
+    line-height:1.7;
+}
+
+.hero{
+    background:linear-gradient(
+        rgba(0,59,92,0.90),
+        rgba(0,59,92,0.85)
+    );
+    color:white;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.hero h1{
+    font-size:4rem;
+    margin-bottom:10px;
+}
+
+.hero h2{
+    font-weight:300;
+    margin-bottom:30px;
+}
+
+.hero .location{
+    font-size:1.3rem;
+    margin-bottom:10px;
+}
+
+.hero .date{
+    font-size:1.2rem;
+}
+
+.announcement{
+    margin-top:30px;
+    display:inline-block;
+    background:rgba(255,255,255,0.15);
+    padding:12px 22px;
+    border-radius:30px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 25px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+    margin-top:-60px;
+}
+
+.card{
+    background:white;
+    border-radius:18px;
+    padding:28px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.card h3{
+    color:var(--primary);
+    margin-bottom:10px;
+}
+
+.section{
+    margin-top:60px;
+}
+
+.section h2{
+    color:var(--primary);
+    font-size:2rem;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.section h2::after{
+    content:"";
+    display:block;
+    width:70px;
+    height:4px;
+    background:var(--accent);
+    margin-top:10px;
+}
+
+.text-block{
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+.committee{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.committee-card{
+    background:white;
+    border-radius:18px;
+    padding:30px;
+    text-align:center;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+}
+
+.committee-card h3{
+    color:var(--secondary);
+    margin-bottom:15px;
+}
+
+.committee-card .name{
+    font-size:1.2rem;
+    font-weight:600;
+}
+
+.editions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+}
+
+.edition{
+    background:white;
+    padding:15px 20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.05);
+}
+
+footer{
+    margin-top:80px;
+    padding:35px;
+    background:var(--primary);
+    color:white;
+    text-align:center;
+}
+
+@media(max-width:768px){
+
+    .hero h1{
+        font-size:2.7rem;
+    }
+
+    .hero h2{
+        font-size:1.2rem;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="hero">
+
+    <h1>ECQT 2028</h1>
+
+    <h2>European Conference on Queueing Theory</h2>
+
+    <div class="location">Bilbao, Spain</div>
+
+    <div class="date">
+        Week beginning <strong>10 July 2028</strong>
+    </div>
+
+    <div class="announcement">
+        Exact conference dates will be announced soon
+    </div>
+
+</section>
+
+<div class="container">
+<!--
+    <div class="cards">
+
+        <div class="card">
+            <h3>Venue</h3>
+            <p>Bilbao, Spain</p>
+        </div>
+
+        <div class="card">
+            <h3>Topics</h3>
+            <p>Queueing theory, stochastic modelling, methodology, computation and applications.</p>
+        </div>
+
+        <div class="card">
+            <h3>Community</h3>
+            <p>Researchers and practitioners from Europe and around the world.</p>
+        </div>
+
+    </div>
+
+    <section class="section">
+
+        <h2>Welcome</h2>
+
+        <div class="text-block">
+
+            <p>
+                The European Conference on Queueing Theory (ECQT 2028)
+                will take place in Bilbao, Spain, during the week beginning
+                10 July 2028.
+            </p>
+
+            <br>
+
+            <p>
+                ECQT is an established tradition for members of the queueing
+                theory community in Europe and beyond. Following successful
+                editions in Ghent (2014), Toulouse (2016), Jerusalem (2018),
+                and Reykjavik (2026), the conference will come to Bilbao in 2028.
+                ECQT builds on the tradition of the Madrid Conferences on
+                Queueing Theory (MCQT), originally organized by Jesús Artalejo.
+            </p>
+
+            <br>
+
+            <p>
+                The conference aims to provide a forum in which researchers
+                and practitioners can exchange ideas, promote new research,
+                encourage collaborations, and discuss advances in all areas
+                of queueing theory.
+            </p>
+
+            <br>
+
+            <p>
+                Contributions covering theoretical developments,
+                methodological advances, computational aspects, and applications
+                are welcome. While ECQT is organized from within Europe, the
+                conference warmly welcomes participants and submissions from
+                all over the world.
+            </p>
+
+        </div>
+
+    </section>
+--->
+    <section class="section">
+
+        <h2>Organizing Committee</h2>
+
+        <div class="committee">
+
+            <div class="committee-card">
+                <h3>General Chair</h3>
+                <div class="name"><a href="https://josudoncel.github.io/">Josu Doncel</a></div>
+            </div>
+
+            <div class="committee-card">
+                <h3>TPC Chair</h3>
+                <div class="name"><a href="https://www.tue.nl/en/research/researchers/marko-boon">Marko Boon</a></div>
+            </div>
+
+            <div class="committee-card">
+                <h3>TPC Chair</h3>
+                <div class="name"><a href="https://liuppa.univ-pau.fr/en/organization/members/cv_en_-eabalerdi-en.html">Elene Anton</a></div>
+            </div>
+
+        </div>
+      <h3>Steering Committee</h3>
+        <div class="steering">
+        <ul style="margin-top:15px; margin-left:25px;">
+                <li>Marko Boon, Eindhoven University of Technology, The Netherlands</li>
+                <li>Herwig Bruneel, Ghent University, Belgium</li>
+                <li>Céline Comte, CNRS and LAAS, France</li>
+                <li>Antonis Economou, University of Athens, Greece</li>
+                <li>Kristy Gardner, Amherst College, USA</li>
+                <li>Michel Mandjes, University of Amsterdam, The Netherlands</li>
+                <li>Antonio Pacheco, IST-UTL, Portugal</li>
+                <li>Tuan Phung-Duc, University of Tsukuba, Japan</li>
+                <li>Miklos Telek, Budapest University of Technology and Economics, Hungary</li>
+                <li>Sabine Wittevrongel, Ghent University, BelgiumConference dates</li>
+                <!---<li>Call for papers</li>
+                <li>Invited speakers</li>
+                <li>Venue information</li>
+                <li>Registration</li>
+                <li>Accommodation</li>
+                <li>Important deadlines</li>--->
+            </ul>
+        </div>
+      
+    </section>
+
+
+
+    
+</div>
+
+<footer>
+    ECQT 2028 · Bilbao, Spain · July 2028
+</footer>
+
+</body>
+</html>
